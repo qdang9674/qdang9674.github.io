@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+	<title>Quang Dang | Homepage</title>
+	<style>
+		/*Class and style*/
+		body, h1 {margin:0;padding:0;}
+		article,footer,nav{overflow:auto} /*Prevent floating elements from overflow*/
+		footer ul, nav ul {list-style-type:none; margin:0;padding:0}
+		
+		
+		
+		
+		nav{background:#eee; border-bottom:1px solid gray; font-weight:bold;; font-size:19px}
+		.navlist {display:flex;}
+		.navlist li {flex-grow:1; text-align:center}
+		.navlist li a {padding:10px; text-decoration:none; color:black;display:block}
+		.navlist li a:hover{background:black;color:white}
+		
+		
+		
+		#wrapper {
+			background:white;
+			padding: 7px 7px 0px;
+		}
+		
+		
+		article {
+			border-bottom: 1px solid black;
+			padding-bottom:10px;
+			word-wrap:break-word;
+			font-family: Verdana, Tahoma, sans-serif;
+		}
+		article:last-child{border-bottom:none}
+		
+		article dl {font-size:15px}
+		article dt {font-weight:bold; margin-top:15px}
+		article h1 {padding: 10px 0px; text-decoration:underline; font-family: Arial, Verdana, sans-serif;}
+		
+		
+		
+		
+		footer{
+			background:black;
+			color: white;
+			padding:20px 50px 10px;
+		}
+		footer a:link{color:#c2f9ff}
+		footer a:visited{color:#7973a7}
+		
+		
+		@media screen and (min-width:700px){ /*Apply these style if screen at least 600px*/
+			article {padding: 40px 30px;}
+			
+			#wrapper{
+				max-width:70%;
+				margin: 50px auto 50px; 
+			}
+			nav{border-radius:30px 30px 0px 0px}
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	
+	
+	
+	<div id="wrapper">
+		<nav>
+			<ul class="navlist">
+				<li><a href="#info">Info</a></li>
+				<li><a href="QD-CV-Feb-2024.pdf">CV</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article id="aboutme">
+				<h1 style="text-align:center"><a name="info">Quang Dang</a></h1>
+				
+				<p> 
+				<img src="q_avatar.jpg" alt="avatar" width="200" style="float:left; margin-right:20px"/>
+				Greeting,</br></br>
+				I am a Ph.D. student in the Department of Computer Science at the University of Maryland, Baltimore County (UMBC), under the guidance of Prof. Justin Brooks. I am on track to receive my MS degree in May 2024 while concurrently pursuing my Ph.D. I earned my B.S. in Computer Science from UMBC in 2021.
+				</p>
+			</article>
+			
+			<article>
+				<h1>Teaching</h1>
+				<p>TA for CMSC 341: Data Structures, Fall 2021, UMBC</p>
+				<p>Lab Instructor for Programming class, Spring 2019, Howard Community College</p>
+				<p>Lab Instructor for Programming class, Fall 2018, Howard Community College</p>
+			</article>
+			
+			<article>
+				<h1>Research Projects</h1>
+				<dl>
+					<dt>2022 - Now <span class="tab8">Automated Detection of Human Cognitive Workload Using AI</span></dt>
+						<dd>Project URL: <a href="https://github.com/qdang9674/EyeTracking">Github</a></dd>
+						<dd>Overview: Developed an AI system to automatically detect human mental states, team trust, and stress levels by predicting cognitive load using pupillary data.</dd>
+						<dd>Personal contribution: Focused on data analysis and preprocessing of pupillary data, labeling cognitive events, and constructing a Machine Learning model to identify cognitive workload.</dd>
+					
+					<dt>2022 -2023 AI-Based Bias Correction for NOAA's Air Quality CMAQ Model</dt>
+						<dd>Project URL: <a href="https://github.com/qdang9674/aaBiasCorrectionCode">Github</a></dd>
+						<dd>Overview: Addressed systematic errors in NOAA's air quality CMAQ model by developing algorithms for bias correction.</dd>
+						<dd>Personal contribution: Applied AI algorithms for bias correction, conducted data analysis on CMAQ predictions, preprocessed data, and built multiple ML models, including CNN and LSTM, to refine CMAQ forecasts.</dd>
+
+					
+					<dt>2021 Recommendation Portal</dt>
+					<dd>Project URL: <a href="https://github.com/tlevin1/Reccomendation-Portal">Github</a></dd>
+					<dd>Overview: Created a web-based application to generate surveys for user input collection, with responses stored in a SQL database.</dd>
+					<dd>My Role: Designed the survey form and user input fields for the front end. On the back end, developed the functionality to store collected user input data in the SQL database.</dd>
+				</dl>
+			</article>
+			
+			<article>
+				<h1>Presentations</h1>
+				<dl>
+					<dt>2024 Enhancing Air Quality Prediction through Bias Correction using Machine Learning on CMAQ</dt>
+					<dd>Presented at 104th AMS Annual Meeting, 2024</dd>
+					<dd><a href="https://ams.confex.com/ams/104ANNUAL/meetingapp.cgi/Paper/437993">Link</a></dd>
+					 
+					 
+					<dt>2023 Analyzing Team Trust: Insights from Eye Data Analysis</dt>
+					<dd>Presented at the Society for Neuroscience (SFN), Annual Meeting 2023</dd>
+					<dd><a href="https://www.sfn.org/-/media/SfN/Documents/NEW-SfN/Meetings/Neuroscience-2023/Abstracts/Abstract-PDFs/SFN23_Abstracts-PDF-Posters_MON_AM.pdf">PDF</a>, page 1178</dd>
+					 
+					<dt>2023 Towards a Generalizable Model to Detect Cognitive Loading Events with Eye-Tracking</dt>
+					<dd>Presented at the Society for Neuroscience (SFN), Annual Meeting 2023</dd>
+					<dd><a href="https://www.sfn.org/-/media/SfN/Documents/NEW-SfN/Meetings/Neuroscience-2023/Abstracts/Abstract-PDFs/SFN23_Abstracts-PDF-Posters_SAT_PM.pdf">PDF</a>, page 578</dd>
+				</dl>
+			</article>
+			
+			<article>
+				<h1>My CV</h1>
+				<h3> <a href="QD-CV-Feb-2024.pdf">Download</a></h3>
+			</article>
+		</main>
+	</div>
+
+
+	<footer>
+		<h1><a name="contact">Contact information</a></h1>
+		<ul>
+			<li><p>Lab:<br/>
+			University of Maryland, Baltimore County<br/>
+			Technology Research Center 262</p>
+			</li>
+			<li><p>Phone: 123-456-7896</p></li>
+			<li><p>Email: qdang1@umbc.edu</p></li>
+		</ul>
+		<p><a href="https://www.linkedin.com/in/qdang9674/">Linkedin</a> | <a href="https://github.com/qdang9674">Github</a></p>
+		
+	</footer>
+
+</body>
